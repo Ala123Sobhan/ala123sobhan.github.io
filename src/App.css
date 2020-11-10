@@ -2,6 +2,46 @@
   text-align: center;
 }
 
+.link:hover {
+  background-color: rgba(206, 243, 103, 0.931);
+}
+
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+li {
+  float: right;
+}
+
+
+li a{
+  display: block;
+  color: white;
+  font-size: 15px;
+  font:bolder;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: rgb(253, 212, 212);
+
+}
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

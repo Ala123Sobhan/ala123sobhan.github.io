@@ -1,76 +1,38 @@
 import React from "react";
-//import logo from "./Ala.JPG";
 import "./App.css";
-import About from "./pages/About"
-import Contact from "./pages/Contact"
-import Home from "./pages/Home"
-import Projects from "./pages/Projects"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
+import {Layout, Header, Navigation, Drawer, Content} from "react-mdl"
+import PageInfo from "./pages/PageInfo";
+import {Link} from "react-router-dom"
 
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-             <li>
-               <Link to="/">Home</Link>
-             </li>
-            <li>
-              <Link to="/about">About Me</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact Me</Link>
-            </li>
-          </ul>
-        </nav>
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
+    <div className="demo-big-content">
+    <Layout>
+        <Header title="Title" scroll>
+            <Navigation >
+                <Link className ="link" to="/">Home</Link>
+                <Link className ="link" to="/about">About Me</Link>
+                <Link className ="link" to="/projects">Projects</Link>
+                <Link className ="link" to="/contact">Contact</Link>
+            </Navigation>
+        </Header>
+        <Drawer title="Title">
+            <Navigation>
+                <Link className ="link"  to="/">Home</Link>
+                <Link className ="link"  to="/about">About Me</Link>
+                <Link className ="link"  to="/projects">Projects</Link>
+                <Link className ="link"  to="/contact">Contact</Link>
+            </Navigation>
+        </Drawer>
 
-          <Route path="/projects">
-            <Projects />
-          </Route>
-
-          <Route path="/contact">
-            <Contact/>
-          </Route>
-
-          <Route path="/">
-            <Home />
-          </Route>
-
-        </Switch>
-      </div>
-    </Router>
+        <Content>
+            <div className="page-content" />
+            <PageInfo/>
+        </Content>
+    </Layout>
+</div>
    
-     
-    
   );
 }
 
 export default App;
-  {/* <header className="App-header">
-       <h1>Ala Sobhan</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>My name is Ala Sobhan and I'm going to master React!</p>
-        <a
-          className="App-link"
-          href="https://github.com/Ala123Sobhan"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Check Me Out!
-        </a>
-      </header>
-  */}
