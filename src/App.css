@@ -1,79 +1,61 @@
-.App {
-  text-align: center;
+
+.top-barColor{
+   background: #03001e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.body{
+background: #03001e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);
+text-align: center;
+position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height:100%;
 }
 
 .link:hover {
-  background-color: rgba(206, 243, 103, 0.931);
+  background-color: rgba(248, 191, 236, 0.931);
+  font-size: larger;
 }
 
-
-
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.navlink:hover {
+  background-color: rgba(253, 221, 246, 0.931);
+  
 }
-
-
-
-li {
-  float: right;
+.myImg{
+  height: 300px;
+  padding-top: 5em;
 }
-
-
-li a{
-  display: block;
-  color: white;
-  font-size: 15px;
-  font:bolder;
+.heading-text{
+  background-color:black;
+  opacity: .75;
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+ }
+.heading-text h1{
+  font-size: 66px;
+  font-weight: bold;
+  color:white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-
-li a:hover{
-  background-color: rgb(253, 212, 212);
-
-}
-
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.heading-text p{
   color: white;
+  font-size: 20px;
+  padding: 1em;
 }
-
-.App-link {
-  color: #61dafb;
+.social-media{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin:auto;
 }
-/*
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-media i{
+  color: white;
+  font-size: 6em;
+  padding: 8px;
 }
-*/
