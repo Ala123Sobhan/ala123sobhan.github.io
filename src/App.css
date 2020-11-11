@@ -90,3 +90,14 @@ background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, F
   font-size: 6em;
   padding: 8px;
 }
+.tab-design{
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+.tab-design:hover{
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+
+}

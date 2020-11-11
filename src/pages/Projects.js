@@ -259,10 +259,10 @@ class Projects extends Component {
             <div>    
          <div className="category-tabs">
              <Tabs activeTab={this.state.activeTab} onChange={(tabId) =>this.setState({activeTab: tabId})} ripple> 
-              <Tab>Java</Tab>
-              <Tab>Javascript</Tab>
-              <Tab>React</Tab>
-              <Tab>HTML,CSS</Tab>
+              <Tab className ="tab-design"style={{fontFamily:"Sofia"}}>Java</Tab>
+              <Tab className ="tab-design"style={{fontFamily:"Sofia"}}>Javascript</Tab>
+              <Tab className ="tab-design"style={{fontFamily:"Sofia"}}>React</Tab>
+              <Tab className ="tab-design"style={{fontFamily:"Sofia"}}>HTML,CSS</Tab>
              </Tabs>
 
         
