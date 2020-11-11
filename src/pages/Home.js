@@ -1,6 +1,4 @@
 import React from 'react'
-import {Grid, Cell} from 'react-mdl'
-import Ala from "./Ala_Img.JPG"
 import Particles from "react-tsparticles";
 
 function Home() {
@@ -81,7 +79,7 @@ function Home() {
         }}
       />
       <div >
-              {/* <img src={Ala} alt="Ala" className="myImg"/>*/}
+             
                 <div className="heading-text">
                 <h1  style={{fontFamily:"Sofia"}}>Ala Sobhan</h1>
                 <p  style={{ fontFamily:"Sofia"}}>

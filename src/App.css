@@ -1,30 +1,54 @@
 
 .top-barColor{
- background: #5433FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* background: #5433FF;  
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); 
+*/
+background: #1D2B64;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .link{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 .link:hover {
-  background-color: rgba(164, 244, 255, 0.931);
+  /*background-color: rgba(235, 164, 255, 0.931);*/
+  background-color: #b39eb5;
   font-size: larger;
+  font-weight: bolder;
   
 }
 
 .navlink:hover{
-  background-color: rgba(191, 255, 239, 0.931);
+  background-color:#b39eb5;
   font-size: larger;
+  font-weight: bolder;
 }
 
 
 .myImg{
-  height: 400px;
-  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 18%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  height: 300px;
   padding-top: 5em;
 
+}
+.quote{
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+.page-clr{
+ background-color: white;
 }
 .heading-text{
   position: absolute;
