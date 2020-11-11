@@ -6,7 +6,7 @@ import Contact from "./Contact"
 import {Switch, Route} from "react-router-dom"
 function PageInfo() {
     return (
-        <div>
+        <>
             <Switch>
           <Route path="/about">
             <About />
@@ -26,7 +26,7 @@ function PageInfo() {
 
         </Switch>
             
-        </div>
+        </>
     )
 }
 

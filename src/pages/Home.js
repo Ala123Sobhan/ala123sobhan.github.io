@@ -1,19 +1,91 @@
 import React from 'react'
 import {Grid, Cell} from 'react-mdl'
 import Ala from "./Ala_Img.JPG"
+import Particles from "react-tsparticles";
 
 function Home() {
     return (
-        <div style={{width:'100%', margin:'auto'}}>
-            <Grid className="body">
-
-              <Cell col={12}>
-               <img src={Ala} alt="Ala" className="myImg"/>
-
+    <div>
+         <Particles
+        id="tsparticles"
+        options={{
+          background: {
+            color: {
+              //value: "#654ea3"
+            },
+          },
+          fpsLimit: 60,
+          interactivity: {
+            detectsOn: "canvas",
+            events: {
+              onClick: {
+                enable: false,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 400,
+                duration: 2,
+                opacity: 0.8,
+                size: 30,
+              },
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#FFFFFF",
+            },
+            collisions: {
+              enable: true,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outMode: "bounce",
+              random: false,
+              speed: 6,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                value_area: 1000,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.7,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              random: true,
+              value: 5,
+            },
+          },
+          detectRetina: true,
+        }}
+      />
+      <div >
+              {/* <img src={Ala} alt="Ala" className="myImg"/>*/}
                 <div className="heading-text">
-                <h1>Ala Sobhan</h1>
-                <p>
-                 Currently an aspiring computer science student in NYC.
+                <h1  style={{fontFamily:"Sofia"}}>Ala Sobhan</h1>
+                <p  style={{ fontFamily:"Sofia"}}>
+                 An aspiring and driven computer science student at Lehman College in NYC.
                  Looking for opportunities that will let me utilize my education
                   and skills in the tech industry</p>
                 <div className="social-media">
@@ -32,11 +104,9 @@ function Home() {
    
                 </div>
 
-              </Cell>
-
-             
-            </Grid>
+           
          
+      </div>
         </div>
     )
 }
