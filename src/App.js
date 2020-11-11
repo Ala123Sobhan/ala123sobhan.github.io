@@ -9,8 +9,8 @@ function App() {
     <div>
    { <div className="demo-big-content">
     <Layout >
-        <Header className="top-barColor"  style={{ fontStyle:"italic", fontFamily:"Sofia"}}>
-        <Particles
+        <Header className="top-barColor" title="Title" style={{ fontStyle:"italic", fontFamily:"Sofia",color:"#b39eb5"}}>
+     {/*   <Particles
         id="tsparticles"
         options={{
           fpsLimit: 60,
@@ -79,8 +79,9 @@ function App() {
           detectRetina: true,
         }}
       />
-        <Navigation style={{float:"left"}}>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia"}}className ="link" to="/">Home</Link>
+      */}
+        <Navigation>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia" }}className ="link" to="/">Home</Link>
                 <Link style={{fontStyle:"italic", fontFamily:"Sofia"}}className ="link" to="/about">About Me</Link>
                 <Link style={{fontStyle:"italic", fontFamily:"Sofia"}}className ="link" to="/projects">Projects</Link>
                 <Link style={{fontStyle:"italic", fontFamily:"Sofia"}}className ="link" to="/contact">Contact</Link>
