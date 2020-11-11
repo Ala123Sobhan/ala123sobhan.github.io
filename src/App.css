@@ -29,7 +29,10 @@ background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, F
   font-weight: bolder;
 }
 
-
+.project-grid{
+  display: flex;
+  height: 350px;
+}
 .myImg{
   position: absolute;
   left: 50%;
