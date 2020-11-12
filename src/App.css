@@ -1,38 +1,44 @@
 
 .top-barColor{
-/* background: #5433FF;  
-background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  
-background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); 
-*/
-background: #1D2B64;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* 
+background: #114357;  
+background: -webkit-linear-gradient(to right, #F29492, #114357);  
+background: linear-gradient(to right, #F29492, #114357); */
+background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .link{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  font-size: large;
   
 }
 
 .link:hover {
   /*background-color: rgba(235, 164, 255, 0.931);*/
-  background-color: #b39eb5;
+ /* background-color: #b39eb5;*/
+  background-color:#ffbbd194;
   font-size: larger;
   font-weight: bolder;
   
 }
 
 .navlink:hover{
-  background-color:#b39eb5;
+  background-color: #ebc0ff7e;
   font-size: larger;
   font-weight: bolder;
 }
 
 .project-grid{
   display: flex;
-  height: 350px;
+  height: 550px;
 }
+.btn:hover{
+  background-color: rgb(213, 171, 214);
+}
+
 .myImg{
   position: absolute;
   left: 50%;
@@ -93,7 +99,7 @@ background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, F
 .tab-design{
   font-weight: bold;
   font-style: italic;
-  color: black;
+  color: white;
 }
 .tab-design:hover{
   font-weight: bolder;

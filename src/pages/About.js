@@ -1,5 +1,5 @@
 import React from 'react'
-import Ala from "./AlaImg.png"
+import Ala from "./images/AlaImg.png"
 import Particles from "react-tsparticles";
 function About() {
     return (
@@ -80,7 +80,7 @@ function About() {
       />
               <img src={Ala} alt="Ala" className="myImg"/>
               <p style={{ fontFamily:"Sofia"}} className="quote">
-                  "Never let the fear of striking out keep you from playing the game”
+              “Never let the fear of striking out keep you from playing the game”
 
                               ― Babe Ruth
 

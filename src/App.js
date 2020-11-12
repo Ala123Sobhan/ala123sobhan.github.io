@@ -3,13 +3,13 @@ import "./App.css";
 import {Layout, Header, Navigation, Drawer, Content} from "react-mdl"
 import PageInfo from "./pages/PageInfo";
 import {Link} from "react-router-dom"
-import Particles from "react-tsparticles";
+//import Particles from "react-tsparticles";
 function App() {
   return (
     <div>
    { <div className="demo-big-content">
     <Layout >
-        <Header className="top-barColor" title="Title" style={{ fontStyle:"italic", fontFamily:"Sofia",color:"#b39eb5"}}>
+        <Header className="top-barColor" title="Title" style={{ fontStyle:"italic", fontFamily:"Sofia",color:"#eaafc8"}}>
      {/*   <Particles
         id="tsparticles"
         options={{
@@ -81,18 +81,18 @@ function App() {
       />
       */}
         <Navigation>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia" }}className ="link" to="/">Home</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia"}}className ="link" to="/about">About Me</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia"}}className ="link" to="/projects">Projects</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia"}}className ="link" to="/contact">Contact</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight: "bold" }}className ="link" to="/">Home</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}}className ="link" to="/about">About Me</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}}className ="link" to="/projects">Projects</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}}className ="link" to="/contact">Contact</Link>
             </Navigation>
         </Header>
        <Drawer className="navlink" >
             <Navigation>
-                <Link style={{fontStyle:"italic",fontFamily:"Sofia", color:"indigo"}}className = "link"   to="/">Home</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"indigo"}}className ="link"  to="/about">About Me</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"indigo"}}className ="link"  to="/projects">Projects</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"indigo"}}className ="link"  to="/contact">Contact</Link>
+                <Link style={{fontStyle:"italic",fontFamily:"Sofia", color:"#651fff",fontWeight:"bold"}}className = "link"   to="/">Home</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#651fff",fontWeight:"bold"}}className ="link"  to="/about">About Me</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color: "#651fff",fontWeight:"bold"}}className ="link"  to="/projects">Projects</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color: "#651fff",fontWeight:"bold"}}className ="link"  to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
   
