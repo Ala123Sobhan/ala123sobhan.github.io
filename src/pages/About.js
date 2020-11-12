@@ -1,6 +1,7 @@
 import React from 'react'
 import Ala from "./images/AlaImg.png"
 import Particles from "react-tsparticles";
+import Resume from "./Resume.pdf"
 function About() {
     return (
         <div>
@@ -81,9 +82,14 @@ function About() {
               <img src={Ala} alt="Ala" className="myImg"/>
               <h6 style={{ fontFamily:"Sofia"}} className="quote">
               “Never let the fear of striking out keep you from playing the game”-Ruth
-
               </h6>
-
+               <div className="resume">
+               <h5 style={{ fontFamily:"Sofia"}}>Check out my resume-</h5>
+               <div class="tooltip">
+               <a style={{ fontFamily:"Sofia", textDecoration:"none",color:"white", fontSize:"18px"}} className="resume_link" download="Ala's resume" href={Resume}> Resume</a>
+               <span class="tooltiptext">click to download resume</span>
+               </div>
+               </div>
         </div>
     )
 }

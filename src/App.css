@@ -68,6 +68,55 @@ background: linear-gradient(to right, #F29492, #114357); */
   color: white;
   font-size: 22px;
 }
+.resume{
+  position: absolute;
+  left: 40%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+
+}
+.resume_link:hover{
+  background-color: rgb(236, 202, 231);
+  font-size: larger;
+  font-weight: bolder;
+  
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgb(252, 252, 252);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  font-size: 12px;
+  background-color: rgb(255, 251, 251);
+  color: rgb(129, 78, 153);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgb(255, 250, 250) transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 .page-clr {
   background-color: white;
 }
