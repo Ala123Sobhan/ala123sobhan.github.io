@@ -79,12 +79,10 @@ function About() {
         }}
       />
               <img src={Ala} alt="Ala" className="myImg"/>
-              <p style={{ fontFamily:"Sofia"}} className="quote">
-              “Never let the fear of striking out keep you from playing the game”
+              <h6 style={{ fontFamily:"Sofia"}} className="quote">
+              “Never let the fear of striking out keep you from playing the game”-Ruth
 
-                              ― B. Ruth
-
-              </p>
+              </h6>
 
         </div>
     )

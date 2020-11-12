@@ -1,45 +1,57 @@
-
-.top-barColor{
-/* 
+.top-barColor {
+  /* 
 background: #114357;  
 background: -webkit-linear-gradient(to right, #F29492, #114357);  
 background: linear-gradient(to right, #F29492, #114357); */
-background: #654ea3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.link{
+.link {
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
   font-size: large;
-  
 }
-
+.slink {
+  font-size: large;
+}
+.slink:hover {
+  background-color: #ffbcfc94;
+  font-size: larger;
+  font-weight: bolder;
+}
 .link:hover {
   /*background-color: rgba(235, 164, 255, 0.931);*/
- /* background-color: #b39eb5;*/
-  background-color:#ffbbd194;
-  font-size: larger;
-  font-weight: bolder;
-  
-}
-
-.navlink:hover{
-  background-color: #e9d1f3a9;
+  /* background-color: #b39eb5;*/
+  background-color: #ffbbd194;
   font-size: larger;
   font-weight: bolder;
 }
 
-.project-grid{
+.navlink:hover {
+  /*background-color: #e9d1f3a9;*/
+  background: linear-gradient(to right, #ffff, #eaafc8);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.project-grid {
   display: flex;
   height: 550px;
 }
-.btn:hover{
+.btn:hover {
   background-color: rgb(213, 171, 214);
 }
 
-.myImg{
+.myImg {
   position: absolute;
   left: 50%;
   top: 18%;
@@ -47,9 +59,8 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
   padding: 10px;
   height: 300px;
   padding-top: 5em;
-
 }
-.quote{
+.quote {
   position: absolute;
   left: 50%;
   top: 42%;
@@ -57,10 +68,10 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
   color: white;
   font-size: 22px;
 }
-.page-clr{
- background-color: white;
+.page-clr {
+  background-color: white;
 }
-.heading-text{
+.heading-text {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -68,55 +79,60 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
   padding: 10px;
   align-content: center;
   text-align: center;
-  background-color:rgb(117, 181, 206. 0.5);
-  opacity: .75;
+  background-color: rgb(117, 181, 206 0.5);
+  opacity: 0.75;
   width: 60%;
   margin: auto;
   border-radius: 10px;
- }
-.heading-text h1{
+}
+.heading-text h1 {
   font-size: 80px;
   font-weight: bold;
-  color:white;
+  color: white;
   text-align: center;
 }
-.heading-text p{
+.heading-text p {
   color: white;
   font-size: 22px;
   padding: 1em;
 }
-.social-media{
+.social-media {
   display: flex;
   justify-content: space-between;
   width: 40%;
-  margin:auto;
+  margin: auto;
 }
-.social-media i{
+.social-media i {
   color: white;
   font-size: 6em;
   padding: 8px;
 }
-.tab-design{
+.tab-design {
   font-weight: bold;
   font-style: italic;
   color: white;
 }
-.tab-design:hover{
+.tab-design:hover {
   font-weight: bolder;
   font-size: larger;
   background-color: #ffbbd194;
-
 }
-p {
+h6 {
   position: relative;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(90deg, rgb(255, 88, 144), #fff, rgb(109, 184, 207));
+  background: linear-gradient(
+    90deg,
+    rgb(255, 221, 238),
+    #ffff,
+    rgb(217, 139, 247)
+  );
   background-repeat: no-repeat;
   background-size: 90%;
   animation: animate 7s linear infinite;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0)
+  background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
 @keyframes animate {

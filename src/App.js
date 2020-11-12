@@ -81,18 +81,18 @@ function App() {
       />
       */}
         <Navigation>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight: "bold" }}className ="link" to="/">Home</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}}className ="link" to="/about">About Me</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}}className ="link" to="/projects">Projects</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}}className ="link" to="/contact">Contact</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold" }}className="link" to="/">Home</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/about">About Me</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/projects">Projects</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/contact">Contact</Link>
             </Navigation>
         </Header>
        <Drawer className="navlink" >
             <Navigation>
-                <Link style={{fontStyle:"italic",fontFamily:"Sofia", color:"#651fff",fontWeight:"bold"}}className = "link"   to="/">Home</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#651fff",fontWeight:"bold"}}className ="link"  to="/about">About Me</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color: "#651fff",fontWeight:"bold"}}className ="link"  to="/projects">Projects</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color: "#651fff",fontWeight:"bold"}}className ="link"  to="/contact">Contact</Link>
+                <Link style={{fontStyle:"italic",fontFamily:"Sofia", color:"#4B0082",fontWeight:"bold"}}  className ="slink"   to="/">Home</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}}  className ="slink"  to="/about">About Me</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}} className ="slink"  to="/projects">Projects</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}} className ="slink"  to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
   

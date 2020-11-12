@@ -206,7 +206,7 @@ class Projects extends Component {
             {
                 return (<div className="project-grid">
                      <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color:"#fff", height:"300px", background:'url(https://icon-library.com/images/cuisine-icon/cuisine-icon-8.jpg) center / cover'}}>
+                   <CardTitle style={{color:"#fff", height:"300px", background:'url(https://img.icons8.com/plasticine/2x/bento.png) center / cover'}}>
                    </CardTitle>
                    <CardText style={{height:"150px",textAlign:"justify"}}>
                      <h5 style={{color:"#2e3951"}}>Cuisines</h5>
