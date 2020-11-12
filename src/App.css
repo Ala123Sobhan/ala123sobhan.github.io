@@ -68,14 +68,32 @@ background: linear-gradient(to right, #F29492, #114357); */
   color: white;
   font-size: 22px;
 }
-.resume{
+.education-title:hover{
+  font-weight: bolder;
+  background-color: rgb(251, 202, 255);
+
+}
+.skills-title:hover{
+  font-weight: bolder;
+  background-color: rgb(251, 202, 255);
+
+}
+.chk-title:hover{
+  font-weight: bolder;
+  background-color: rgb(251, 202, 255);
+
+}
+.resumeInfo{
   position: absolute;
-  left: 40%;
-  top: 55%;
+  left: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
 
+}
+.resume_link{
+  font-size: 40px;
 }
 .resume_link:hover{
   background-color: rgb(236, 202, 231);
@@ -83,6 +101,7 @@ background: linear-gradient(to right, #F29492, #114357); */
   font-weight: bolder;
   
 }
+
 .tooltip {
   position: relative;
   display: inline-block;
