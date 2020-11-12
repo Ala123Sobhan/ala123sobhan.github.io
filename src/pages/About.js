@@ -82,7 +82,7 @@ function About() {
               <p style={{ fontFamily:"Sofia"}} className="quote">
               “Never let the fear of striking out keep you from playing the game”
 
-                              ― Babe Ruth
+                              ― B. Ruth
 
               </p>
 

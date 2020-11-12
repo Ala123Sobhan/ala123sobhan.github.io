@@ -55,7 +55,7 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
   top: 42%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 .page-clr{
  background-color: white;
@@ -106,4 +106,24 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
   font-size: larger;
   background-color: #ffbbd194;
 
+}
+p {
+  position: relative;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(255, 88, 144), #fff, rgb(109, 184, 207));
+  background-repeat: no-repeat;
+  background-size: 90%;
+  animation: animate 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0)
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 900%;
+  }
 }
