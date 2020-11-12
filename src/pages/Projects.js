@@ -16,7 +16,7 @@ class Projects extends Component {
             <div className="project-grid">
 
               <div style={{marginLeft:"90px",marginRight:"150px"}}>
-               <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}}>
+               <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}} className="card1">
 
                    <CardTitle style={{color:"#ffff", height:"300px",fontWeight:"bolder", background:'url(https://vectorified.com/images/minesweeper-icon-24.jpg) center / cover'}}>
                    </CardTitle>

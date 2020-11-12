@@ -21,8 +21,8 @@ function App() {
 
        <Drawer className="navlink" >
             <Navigation>
-                <Link style={{fontStyle:"italic",fontFamily:"Sofia", color:"#4B0082",fontWeight:"bold"}}  className ="slink"   to="/">Home</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}}  className ="slink"  to="/about">About Me</Link>
+                <Link style={{fontStyle:"italic",fontFamily:"Sofia", color:"#4B0082",fontWeight:"bold"}} className ="slink"   to="/">Home</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}} className ="slink"  to="/about">About Me</Link>
                 <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}} className ="slink"  to="/projects">Projects</Link>
                 <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}} className ="slink"  to="/contact">Contact</Link>
             </Navigation>

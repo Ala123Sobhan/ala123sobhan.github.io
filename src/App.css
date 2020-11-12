@@ -24,7 +24,7 @@ background: linear-gradient(to right, #F29492, #114357); */
   font-size: large;
 }
 .slink:hover {
-  background-color: #ffbcfc94;
+  background: white;
   font-size: larger;
   font-weight: bolder;
 }
@@ -67,6 +67,46 @@ background: linear-gradient(to right, #F29492, #114357); */
   transform: translate(-50%, -50%);
   color: white;
   font-size: 22px;
+}
+.contact{
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  color: white;
+ /* font-size: 22px;*/
+}
+.contact-body{
+  margin: auto;
+ /* background: rgb(255, 246, 255);*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 0em;
+  
+}
+.contact-grid{
+  text-align: center;
+  justify-content: center;
+  width:100%;
+  height: 100%;
+ /* background: rgb(235, 209, 232);
+  border: 2px solid rgb(255, 211, 211);*/
+  margin-bottom: 20px;
+}
+
+.contact-list{
+  padding-left: 160px;
+}
+.contact-list i{
+   font-size: 50px;
+   padding-right:40px;
+}
+.contact-list .linkedln:hover{
+    background-color: thistle;
+    font-size: larger;
+    font-weight: bolder;
 }
 .education-title:hover{
   font-weight: bolder;
