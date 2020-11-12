@@ -58,7 +58,7 @@ class Projects extends Component {
 
                <div style={{marginRight:"150px"}}>
                <Card shadow={5} style={{minWidth:"450",margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color: "#ffff", height:"300px", fontWeight:"bolder", background:'url(https://cdn4.vectorstock.com/i/1000x1000/48/38/hotel-icon-summer-vacation-vector-13874838.jpg) center / cover'}}>
+                   <CardTitle style={{color: "#ffff", height:"300px", fontWeight:"bolder", background:'url(https://cdn.nohat.cc/thumb/f/720/comvecteezy568310.jpg) center / cover'}}>
                    </CardTitle>
                    <CardText style={{height:"150px",textAlign:"justify"}}>
                      <h5  style={{color:"#2e3951"}}>Hotel Managment System</h5>

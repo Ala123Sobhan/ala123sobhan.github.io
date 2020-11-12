@@ -104,6 +104,6 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
 .tab-design:hover{
   font-weight: bolder;
   font-size: larger;
-  color: black;
+  background-color: #ffbbd194;
 
 }
