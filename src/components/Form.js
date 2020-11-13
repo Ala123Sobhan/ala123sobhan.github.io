@@ -57,33 +57,34 @@ import React, { Component } from 'react'
       };
     render() {
         return (
-            <div>
+            <div className="form-design">
                 <form>
-                <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px", paddingRight:"70px"}}>Name</label>
-                
-                <input style={{width:"25%"}}
-              type="text"
-              name="name"
-              onChange={this.handleChange}
-              value={this.state.name}/>
-             <br/><br/>
+                <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px",marginLeft:"-140px"}}>Name</label>
+                <br/>
+                <input style={{width:"30%"}}
+                 type="text"
+                 name="name"
+                 onChange={this.handleChange}
+                 value={this.state.name}/>
+                 <br/><br/>
 
-              <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px", paddingRight:"75px"}}>Email</label>
-              <input style={{width:"25%"}}
-               type="text"
-               name="email"
-               onChange={this.handleChange}
-               value={this.state.email}/>
+                <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px",marginLeft:"-140px"}}>Email</label>
+                <br/>
+                <input style={{width:"30%"}}
+                type="text"
+                name="email"
+                onChange={this.handleChange}
+                value={this.state.email}/>
                <br/><br/>
 
-              <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px", paddingRight:"30px"}}>Message</label>
-              <textarea style={{width:"25%",height:"75%"}} 
-               type="text"
-               name="msg"
-               onChange={this.handleChange}
-               value={this.state.msg}
-               
-          /> 
+               <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px",marginLeft:"-110px"}}>Message</label>
+               <br/>
+               <textarea style={{width:"30%",height:"80%"}} 
+                type="text"
+                name="msg"
+                onChange={this.handleChange}
+                value={this.state.msg}
+               /> 
               <br/><br/>
 
                 </form>

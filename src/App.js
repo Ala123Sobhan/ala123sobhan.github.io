@@ -5,9 +5,10 @@ import PageInfo from "./pages/PageInfo";
 import {Link} from "react-router-dom"
 //import Particles from "react-tsparticles";
 function App() {
+  console.log("Page height:",document.body.scrollHeight);
   return (
-    <div>
-   { <div className="demo-big-content">
+    
+   <div >
     <Layout >
         <Header className="top-barColor" title={<Link style={{textDecoration:"none", fontFamily:"Sofia",color:"white"}} to ="/">My Portfolio</Link>} scroll>
 
@@ -29,12 +30,10 @@ function App() {
         </Drawer>
   
         <Content>
-            <div className="page-content" />
-            <PageInfo/>
+            <PageInfo />
         </Content>
   </Layout>
-  </div>}
-</div>
+  </div>
   );
 }
 

@@ -37,15 +37,17 @@ background: linear-gradient(to right, #F29492, #114357); */
 }
 
 .navlink:hover {
-  /*background-color: #e9d1f3a9;*/
   background: linear-gradient(to right, #ffff, #eaafc8);
   font-size: larger;
   font-weight: bolder;
 }
 
-.project-grid {
+div.project-grid {
   display: flex;
-  height: 550px;
+  padding-top: 20px;
+  
+
+  
 }
 .btn:hover {
   background-color: rgb(213, 171, 214);
@@ -68,34 +70,33 @@ background: linear-gradient(to right, #F29492, #114357); */
   color: white;
   font-size: 22px;
 }
-.contact{
+.contact {
   position: absolute;
   left: 50%;
   top: 5%;
   transform: translate(-50%, -50%);
   color: white;
- /* font-size: 22px;*/
+  /* font-size: 22px;*/
 }
-.contact-body{
+.contact-body {
   margin: auto;
- /* background: rgb(255, 246, 255);*/
+  /* background: rgb(255, 246, 255);*/
   position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
   padding-top: 0em;
-  
 }
-.contact-grid{
+.contact-grid {
   text-align: center;
   justify-content: center;
-  width:100%;
+  width: 100%;
   height: 100%;
- /* background: rgb(235, 209, 232);
+  /* background: rgb(235, 209, 232);
   border: 2px solid rgb(255, 211, 211);*/
   margin-bottom: 20px;
 }
-.form-btn{
+.form-btn {
   width: 15%;
   height: 3%;
   background-color: #7a4caf;
@@ -107,63 +108,58 @@ background: linear-gradient(to right, #F29492, #114357); */
   cursor: pointer;
   text-align: center;
 }
-.form-btn:hover{
+.form-btn:hover {
   background-color: thistle;
   font-size: large;
   font-weight: bolder;
 }
-.contact-list{
+.contact-list {
   padding-left: 160px;
 }
-.contact-list i{
-   font-size: 50px;
-   padding-right:40px;
+.contact-list i {
+  font-size: 50px;
+  padding-right: 40px;
 }
 
-.contact-list i:hover{
+.contact-list i:hover {
   font-weight: bolder;
-  
 }
-.contact-list .linkedln:hover{
-    background-color: thistle;
-    font-size: larger;
-    font-weight: bolder;
+
+.contact-list .linkedln:hover {
+  background-color: thistle;
+  font-size: larger;
+  font-weight: bolder;
 }
-.form{
+.form {
   padding-top: 50px;
 }
-.education-title:hover{
+.education-title:hover {
   font-weight: bolder;
   background-color: rgb(251, 202, 255);
-
 }
-.skills-title:hover{
+.skills-title:hover {
   font-weight: bolder;
   background-color: rgb(251, 202, 255);
-
 }
-.chk-title:hover{
+.chk-title:hover {
   font-weight: bolder;
   background-color: rgb(251, 202, 255);
-
 }
-.resumeInfo{
+.resumeInfo {
   position: absolute;
   left: 50%;
   top: 60%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
-
 }
-.resume_link{
+.resume_link {
   font-size: 40px;
 }
-.resume_link:hover{
+.resume_link:hover {
   background-color: rgb(236, 202, 231);
   font-size: larger;
   font-weight: bolder;
-  
 }
 
 .tooltip {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import {Card, CardTitle, CardText, CardActions,Button,Tabs, Tab, Grid, Cell} from "react-mdl"
+import {Card, CardTitle, CardText, CardActions,Button,Tabs, Tab} from "react-mdl"
+
 class Projects extends Component {
     constructor(props) {
         super(props)
@@ -12,8 +13,8 @@ class Projects extends Component {
     changeTabs=()=>{
         if(this.state.activeTab === 0)
         {
-            return(
-            <div className="project-grid">
+            return (
+            <div className="project-grid" >
 
               <div style={{marginLeft:"90px",marginRight:"150px"}}>
                <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}} className="card1">
@@ -58,7 +59,7 @@ class Projects extends Component {
 
                <div style={{marginRight:"150px"}}>
                <Card shadow={5} style={{minWidth:"450",margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color: "#ffff", height:"300px", fontWeight:"bolder", background:'url(https://cdn.nohat.cc/thumb/f/720/comvecteezy568310.jpg) center / cover'}}>
+                   <CardTitle style={{color: "#ffff", height:"300px", fontWeight:"bolder", background:'url(https://www.flaticon.com/svg/static/icons/svg/3004/3004703.svg) center / cover'}}>
                    </CardTitle>
                    <CardText style={{height:"150px",textAlign:"justify"}}>
                      <h5  style={{color:"#2e3951"}}>Hotel Managment System</h5>
@@ -73,13 +74,13 @@ class Projects extends Component {
                  
                </Card>
                </div>
-              {/*
-              <div style={{marginRight:"150px"}}>
+
+             {/*  <div style={{position:'fixed', top:"80%",left:"50%"}}>
               <Card shadow={5} style={{minWidth:"450",margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color:"#ffff", height:"176px", background:'url(https://stackify.com/wp-content/uploads/2018/09/Java-Debugging-Tips-1280x720.jpg) center / cover'}}>
+                   <CardTitle style={{color:"#ffff", height:"300px", background:'url(https://stackify.com/wp-content/uploads/2018/09/Java-Debugging-Tips-1280x720.jpg) center / cover'}}>
                     Connect four
                    </CardTitle>
-                   <CardText>
+                   <CardText style={{height:"150px",textAlign:"justify"}}>
                    Used Java and Graphical User Interface to make a traditional Connect4 game where the user can select the dimensions of
                    the grid. The objective of the game is that the player has to match four of his color components by connecting them row or column or diagonal wise.
                    </CardText>
@@ -88,18 +89,18 @@ class Projects extends Component {
                     
                     
                  </CardActions>
-                 <CardMenu style={{color:"#fff"}}>
-                   <IconButton name="share"/>
-                 </CardMenu>
+                 
                </Card>
-               </div>
 
-              {/* <div  style={{marginRight:"150px"}}>
-               <Card shadow={5} style={{minWidth:"450",margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color:"#ffff", height:"176px", background:'url(https://stackify.com/wp-content/uploads/2018/09/Java-Debugging-Tips-1280x720.jpg) center / cover'}}>
+               </div>
+              
+
+               <div  style={{position:'fixed', top:"90%",left:"20%"}}>
+               <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}}>
+                   <CardTitle style={{color:"#ffff", height:"300px", background:'url(https://stackify.com/wp-content/uploads/2018/09/Java-Debugging-Tips-1280x720.jpg) center / cover'}}>
                     Treasure Hunt
                    </CardTitle>
-                   <CardText>
+                   <CardText style={{height:"150px",textAlign:"justify"}}>
                    Java project where a player can go through a series of rooms and battle with certain monsters to advance to the next level
                     until the player makes it to the final room which has a treasure
                    </CardText>
@@ -108,15 +109,14 @@ class Projects extends Component {
                     
                     
                  </CardActions>
-                 <CardMenu style={{color:"#fff"}}>
-                   <IconButton name="share"/>
-                 </CardMenu>
+                
             </Card>
-            </div>
-            */}
-              
+            </div>*/}
+            
+                 
             </div>)
         }
+
         else if(this.state.activeTab === 1)
         {
             return(<div className="project-grid">
@@ -151,14 +151,14 @@ class Projects extends Component {
                  </CardActions>
                  
                </Card>
-               </div>
+        </div>
             </div>)
         }
         else if(this.state.activeTab === 2)
         {
             return(<div  className="project-grid">
                  <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color: "#1C2331", height:"300px", fontWeight:"bolder", background:'url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRH38bXe3xseOdrTZS3KEcy6iaC21nIbwaP6A&usqp=CAU) center / cover'}}>
+                   <CardTitle style={{color: "#1C2331", height:"300px", fontWeight:"bolder", background:'url(https://www.flaticon.com/svg/static/icons/svg/841/841378.svg) center / cover'}}>
                    </CardTitle>
                    <CardText style={{height:"150px",textAlign:"justify"}}>
                      <h5  style={{color:"#2e3951"}}>FavLinks</h5>
@@ -174,12 +174,12 @@ class Projects extends Component {
                </Card>
 
                <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color: "#1C2331", height:"300px", fontWeight:"bolder", background:'url(https://icon-library.com/images/color-icon/color-icon-22.jpg) center / cover'}}>
+                   <CardTitle style={{color: "#1C2331", height:"300px", fontWeight:"bolder", background:'url(https://www.flaticon.com/svg/static/icons/svg/1158/1158164.svg) center / cover'}}>
                    </CardTitle>
                    <CardText style={{height:"150px",textAlign:"justify"}}>
                      <h5  style={{color:"#2e3951"}}>Design Pad</h5>
-                    A React App where user can drag colors and design the pad as per his will .
-                    User can reset the design of the design pad and get back to the intial state.
+                    A React App where user can drag  and drop colors and design the pad as per his will .
+                    User can reset the design of the design pad to get back to the intial state.
                    </CardText>
                 <CardActions>
                     <Button colored><a style={{textDecoration:"none", color:"royalblue", padding:"35px"}} href="https://github.com/Ala123Sobhan/design-pad/tree/development" rel="noopener noreferrer" target="_blank">Github</a></Button>
@@ -188,11 +188,11 @@ class Projects extends Component {
                </Card>
 
                <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color: "#1C2331", height:"300px", fontWeight:"bolder", background:'url(https://i.pinimg.com/originals/32/61/f0/3261f032b83648a7833ed1b5d9c45847.jpg) center / cover'}}>
+                   <CardTitle style={{color: "#1C2331", height:"300px", fontWeight:"bolder", background:'url(https://www.flaticon.com/svg/static/icons/svg/1163/1163661.svg) center / cover'}}>
                    </CardTitle>
                    <CardText style={{height:"150px",textAlign:"justify"}}>
                      <h5  style={{color:"#2e3951"}}>Weather App</h5>
-                    A React App where user can select a particular place through a drop down list of cities and countries and retrieve weather information about that particular place.
+                    A React App where user can select a particular place from a drop down list of cities and countries and retrieve weather information about that particular place.
                    </CardText>
                 <CardActions>
                     <Button colored><a style={{textDecoration:"none", color:"royalblue", padding:"35px"}} href="https://github.com/Ala123Sobhan/Weather-App" rel="noopener noreferrer" target="_blank">Github</a></Button>
@@ -261,18 +261,8 @@ class Projects extends Component {
              </Tabs>
 
        </div>
-         <div>
-            <Grid>
-               { <Cell col ={12}>
-                  <div className="content">
-                  {this.changeTabs()}
-                  </div>
-                </Cell>
-               
-                }
-                    
-             </Grid>
-            
+         <div >
+         {this.changeTabs()} 
          </div>
         
         </div>
