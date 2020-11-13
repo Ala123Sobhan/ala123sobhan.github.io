@@ -1,5 +1,6 @@
 import React from 'react'
 import {List, ListItem, ListItemContent, Grid, Cell} from "react-mdl"
+import Form from "../components/Form"
 function Contact() {
     return (
         <div>
@@ -14,7 +15,9 @@ function Contact() {
                      <Cell col={6}>
                      <h3  style={{fontFamily:"Sofia", color:"white"}}>Contact Form</h3>
                      <hr style={{borderTop:"5px dotted white", width: "50%", margin:"auto"}}/>
-                     
+                     <div className="form">
+                      <Form/>
+                     </div>
                      </Cell>
 
                      <Cell col={6}>

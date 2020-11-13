@@ -95,7 +95,23 @@ background: linear-gradient(to right, #F29492, #114357); */
   border: 2px solid rgb(255, 211, 211);*/
   margin-bottom: 20px;
 }
-
+.form-btn{
+  width: 15%;
+  height: 3%;
+  background-color: #7a4caf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+.form-btn:hover{
+  background-color: thistle;
+  font-size: large;
+  font-weight: bolder;
+}
 .contact-list{
   padding-left: 160px;
 }
@@ -107,6 +123,9 @@ background: linear-gradient(to right, #F29492, #114357); */
     background-color: thistle;
     font-size: larger;
     font-weight: bolder;
+}
+.form{
+  padding-top: 50px;
 }
 .education-title:hover{
   font-weight: bolder;
