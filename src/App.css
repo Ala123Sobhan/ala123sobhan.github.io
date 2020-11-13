@@ -38,13 +38,23 @@
   font-weight: bolder;
 }
 
-div.project-grid {
+.project-grid {
   display: flex;
-  padding-top: 20px;
+  padding-top: 60px;
   
-
   
 }
+.project1{
+display: flex;
+align-items: flex-start;
+flex-wrap: wrap;
+padding-top: 60px;
+
+/*padding-top: 60px;
+display: flex;
+flex-wrap: wrap;*/
+}
+
 .btn:hover {
   background-color: rgb(213, 171, 214);
 }
