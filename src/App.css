@@ -1,8 +1,4 @@
 .top-barColor {
-  /* 
-background: #114357;  
-background: -webkit-linear-gradient(to right, #F29492, #114357);  
-background: linear-gradient(to right, #F29492, #114357); */
   background: #654ea3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -113,6 +109,29 @@ div.project-grid {
   font-size: large;
   font-weight: bolder;
 }
+.input-design{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  width: 10%;
+  height: 3%;
+  background-color: #f0e3f8;
+  color: indigo;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+.input-design:hover{
+  opacity: 1;
+}
+.form-design{
+padding-left: 20px;
+ padding-top: 0%;
+ padding-right: 30px;
+ 
+}
 .contact-list {
   padding-left: 160px;
 }
@@ -131,7 +150,7 @@ div.project-grid {
   font-weight: bolder;
 }
 .form {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .education-title:hover {
   font-weight: bolder;

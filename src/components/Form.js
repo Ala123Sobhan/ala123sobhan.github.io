@@ -62,28 +62,32 @@ import React, { Component } from 'react'
                 <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px",marginLeft:"-140px"}}>Name</label>
                 <br/>
                 <input style={{width:"30%"}}
+                 className="input-design"
                  type="text"
                  name="name"
                  onChange={this.handleChange}
-                 value={this.state.name}/>
+                 value={this.state.name} placeholder="Your name..."/>
                  <br/><br/>
 
                 <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px",marginLeft:"-140px"}}>Email</label>
                 <br/>
                 <input style={{width:"30%"}}
+                className="input-design"
                 type="text"
                 name="email"
                 onChange={this.handleChange}
-                value={this.state.email}/>
+                value={this.state.email} placeholder="Your email..."/>
                <br/><br/>
 
                <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px",marginLeft:"-110px"}}>Message</label>
                <br/>
                <textarea style={{width:"30%",height:"80%"}} 
+                className="input-design"
                 type="text"
                 name="msg"
                 onChange={this.handleChange}
                 value={this.state.msg}
+                placeholder="Write something..."
                /> 
               <br/><br/>
 
