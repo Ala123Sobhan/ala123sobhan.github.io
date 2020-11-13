@@ -41,14 +41,7 @@ import React, { Component } from 'react'
           alert("Hey, "+name+" your message sent successfully!");
         } else {
           if (name === "" && email === "" && msg === "") {
-            alert("name,email and message required!");
-          } else if (name === "" && email !== "" && msg !== "") {
-            alert("name is required!");
-          } else if (email === "" && name !== "" && msg !== "") {
-            alert(" email is required!");
-          }
-          else if (msg === "" && name !== "" && email !== "") {
-            alert(" message is required!");
+            alert("name, email and message required!");
           }
         }
         success &&
@@ -60,13 +53,14 @@ import React, { Component } from 'react'
             }
             
           );
-        console.log(this.state.name + " " + this.state.email);
+       // console.log(this.state.name + " " + this.state.email);
       };
     render() {
         return (
             <div>
                 <form>
                 <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px", paddingRight:"70px"}}>Name</label>
+                
                 <input style={{width:"25%"}}
               type="text"
               name="name"
@@ -93,7 +87,7 @@ import React, { Component } from 'react'
               <br/><br/>
 
                 </form>
-                <button style={{textAlign:"center", fontFamily:"Sofia", fontSize:"bold"}} className="form-btn" onClick={this.onFormSubmit}>Submit</button>
+                <button style={{textAlign:"center", fontFamily:"Sofia", fontSize:"bold"}} className="form-btn" onClick={this.onFormSubmit}>Send</button>
                 
             </div>
         )

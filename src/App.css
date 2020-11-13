@@ -119,6 +119,11 @@ background: linear-gradient(to right, #F29492, #114357); */
    font-size: 50px;
    padding-right:40px;
 }
+
+.contact-list i:hover{
+  font-weight: bolder;
+  
+}
 .contact-list .linkedln:hover{
     background-color: thistle;
     font-size: larger;

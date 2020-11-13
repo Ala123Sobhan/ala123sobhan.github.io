@@ -34,7 +34,9 @@ function Contact() {
 
                           <ListItem>
                           <ListItemContent style={{fontSize:"20px", fontFamily:"Sofia",color:"white"}}>
-                               <i className="fa fa-linkedin-square" aria-hidden="true"/>
+                          <a href="https://www.linkedin.com/in/ala-sobhan-892b9017a/" rel="noopener noreferrer" target="_blank">
+                           <i className="fa fa-linkedin-square" aria-hidden="true" style={{color:"white"}}/>
+                           </a>
                                <a className ="linkedln" style={{textDecoration:"none",color:"white"}}href="https://www.linkedin.com/in/ala-sobhan-892b9017a/" rel="noopener noreferrer" target="_blank">
                                 LinkedIn
                                </a>
@@ -43,7 +45,10 @@ function Contact() {
                           
                           <ListItem>
                           <ListItemContent style={{fontSize:"20px", fontFamily:"Sofia",color:"white"}}>
-                               <i className="fa fa-envelope" aria-hidden="true"/>
+
+                          <a style={{textDecoration:"none",color:"white"}} href="mailto:ala123sobhan@gmail.com" rel="noopener noreferrer" target="_blank">
+                             <i className="fa fa-envelope" aria-hidden="true"/>
+                               </a>
                                <a className ="linkedln" style={{textDecoration:"none",color:"white"}} href="mailto:ala123sobhan@gmail.com" rel="noopener noreferrer" target="_blank">
                                 ala123sobhan@gmail.com
                                </a>
