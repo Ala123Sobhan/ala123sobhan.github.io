@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import emailjs from 'emailjs-com'
+import apiKeys from '../apikeys'
  class Form extends Component {
 
     constructor(props) {
@@ -8,7 +9,7 @@ import React, { Component } from 'react'
         this.state = {
              name:"",
              email:"",
-             msg:""
+             message:""
         }
     }
     
@@ -22,25 +23,41 @@ import React, { Component } from 'react'
     
         console.log(this.state.name);
         console.log(this.state.email);
-        console.log(this.state.msg);
+        console.log(this.state.message);
 
       };
-      onFormSubmit = (event) => {
-      
-        event.preventDefault();
-    
-       // const { handleSubmit } = this.props;
+
+      sendEmail = (e) => {
+       
+       // alert("In form submit")
+        e.preventDefault();
+          
+       
         const name = this.state.name;
         const email = this.state.email;
-        const msg = this.state.msg;
-       
+        const message = this.state.message;
+        
+      
+
         let success = false;
-        if (name !== "" && email !== "" && msg !== "" ) {
+        if (name !== "" && email !== "" && message !== "" ) {
           success = true;
           
-          alert("Hey, "+name+" your message sent successfully!");
+          console.log(name);
+          console.log(email);
+
+          emailjs.sendForm('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
+          .then(result => {
+          alert('Dear '+name+ ', message is sent, Ala Sobhan will get back to you shortly', result.text);
+          },
+          error => {
+          alert( 'An error occured, Plese try again',error.text)
+          })
+          
+          
+         
         } else {
-          if (name === "" && email === "" && msg === "") {
+          if (!success) {
             alert("name, email and message required!");
           }
         }
@@ -49,16 +66,16 @@ import React, { Component } from 'react'
             {
               name: "",
               email: "",
-              msg:""
+              message:""
             }
             
           );
-       // console.log(this.state.name + " " + this.state.email);
+       
       };
     render() {
         return (
             <div className="form-design">
-                <form>
+                <form onSubmit={this.sendEmail}>
                 <label style={{fontFamily:"Sofia", color:"white", fontSize:"30px",marginLeft:"-140px"}}>Name</label>
                 <br/>
                 <input style={{width:"30%"}}
@@ -84,16 +101,17 @@ import React, { Component } from 'react'
                <textarea style={{width:"30%",height:"80%"}} 
                 className="input-design"
                 type="text"
-                name="msg"
+                name="message"
                 onChange={this.handleChange}
-                value={this.state.msg}
+                value={this.state.message}
                 placeholder="Write something..."
                /> 
               <br/><br/>
-
-                </form>
-                <button style={{textAlign:"center", fontFamily:"Sofia", fontSize:"bold"}} className="form-btn" onClick={this.onFormSubmit}>Send</button>
                 
+              <input type="submit" value="Send" style={{textAlign:"center", fontFamily:"Sofia", fontSize:"bold"}} className="form-btn" />
+                </form>
+               
+               {/*<button style={{textAlign:"center", fontFamily:"Sofia", fontSize:"bold"}} className="form-btn" onClick={this.handleSubmit}>Send</button> */}
             </div>
         )
     }
