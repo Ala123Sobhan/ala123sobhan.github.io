@@ -82,7 +82,7 @@ class Projects extends Component {
                    <CardTitle style={{color:"#ffff", height:"300px", background:'url(https://www.flaticon.com/svg/static/icons/svg/2721/2721271.svg) center / cover'}}>
                    </CardTitle>
                    <CardText style={{height:"150px",textAlign:"justify"}}>
-                   <h5  style={{color:"#2e3951"}}> Connect four</h5>
+                   <h5  style={{color:"#2e3951"}}> Connect Four</h5>
                    Used Java and Graphical User Interface to make a traditional Connect4 game where the user can select the dimensions of
                    the grid. The objective of the game is that the player has to match four of his color components by connecting them row or column or diagonal wise.
                    </CardText>
