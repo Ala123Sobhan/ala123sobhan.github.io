@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
 import apiKeys from '../apikeys'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
  class Form extends Component {
 
     constructor(props) {
@@ -31,7 +33,8 @@ import apiKeys from '../apikeys'
        
        // alert("In form submit")
         e.preventDefault();
-          
+        
+        const MySwal = withReactContent(Swal)
        
         const name = this.state.name;
         const email = this.state.email;
@@ -48,17 +51,47 @@ import apiKeys from '../apikeys'
 
           emailjs.sendForm('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
           .then(result => {
-          alert('Dear '+name+ ', message is sent, Ala Sobhan will get back to you shortly', result.text);
+         // alert('Dear '+name+ ', message is sent, Ala Sobhan will get back to you shortly', result.text);
+         MySwal.fire({
+          title: 'Dear '+name+ ', message is sent, Ala Sobhan will get back to you shortly' ,
+          icon: 'success',
+           showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+               },
+          hideClass: {
+             popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
           },
           error => {
-          alert( 'An error occured, Plese try again',error.text)
+          //alert( 'An error occured, Plese try again',error.text)
+          MySwal.fire({
+            title: 'An error occured, Plese try again' ,
+            icon: 'success',
+             showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+                 },
+            hideClass: {
+               popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
           })
           
           
          
         } else {
           if (!success) {
-            alert("name, email and message required!");
+            //alert("name, email and message required!");
+            MySwal.fire({
+              title: 'Name, Email and Message required!' ,
+              icon: 'error',
+               showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                   },
+              hideClass: {
+                 popup: 'animate__animated animate__fadeOutUp'
+              }
+            })
           }
         }
         success &&
