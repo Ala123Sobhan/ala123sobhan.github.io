@@ -10,7 +10,7 @@ function App() {
     
    <div >
     <Layout >
-        <Header className="top-barColor" title={<Link style={{textDecoration:"none", fontFamily:"Sofia",color:"white"}} to ="/">My Portfolio</Link>} scroll>
+        <Header className="top-barColor" title={<Link style={{textDecoration:"none", fontFamily:"Sofia",color:"white"}} className="myportfolio-title" to ="/">My Portfolio</Link>} scroll>
 
         <Navigation>
                 <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold" }}className="link"  to="/">Home</Link>
@@ -22,10 +22,10 @@ function App() {
 
        <Drawer className="navlink" >
             <Navigation>
-                <Link style={{fontStyle:"italic",fontFamily:"Sofia", color:"#4B0082",fontWeight:"bold"}} className ="slink"   to="/">Home</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}} className ="slink"  to="/about">About Me</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}} className ="slink"  to="/projects">Projects</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#4B0082",fontWeight:"bold"}} className ="slink"  to="/contact">Contact</Link>
+                <Link style={{fontStyle:"italic",fontFamily:"Sofia", color:"#1D2B64",fontWeight:"bold"}} className ="slink"  to="/">Home</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#1D2B64",fontWeight:"bold"}} className ="slink"  to="/about">About Me</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#1D2B64",fontWeight:"bold"}} className ="slink"  to="/projects">Projects</Link>
+                <Link style={{fontStyle:"italic", fontFamily:"Sofia",color:"#1D2B64",fontWeight:"bold"}} className ="slink"  to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
   

@@ -64,9 +64,9 @@ import withReactContent from 'sweetalert2-react-content'
           icon: 'success',
           width: '480px',
           background:'#FFEFFF',
+          confirmButtonColor:'indigo',
           heightAuto: false,
          // height: '10px',
-          confirmButtonColor:'indigo',
            showClass: {
               popup: 'animate__animated animate__fadeInDown'
                },

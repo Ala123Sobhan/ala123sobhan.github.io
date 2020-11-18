@@ -89,9 +89,9 @@ function About() {
                <div className="resumeInfo">
                <EducationInfo startYear={2019} endYear={2021}/>
 
-               <hr style={{borderTop:"2px solid #4B0082"}}/>
+               <hr style={{borderTop:"2px solid #ffffff"}}/>
                <Skills/>
-               <hr style={{borderTop:"2px solid #4B0082"}}/>
+               <hr style={{borderTop:"2px solid #ffffff"}}/>
                <h3 className="chk-title" style={{ fontFamily:"Sofia"}}>Check out my resume-</h3>
 
                <div class="tooltip">

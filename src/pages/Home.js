@@ -81,13 +81,13 @@ function Home() {
       <div >
              
                 <div className="heading-text">
-                <h1  style={{fontFamily:"Sofia"}}>Ala Sobhan</h1>
+                <h1 style={{fontFamily:"Sofia"}}>Ala Sobhan</h1>
                 <p  style={{ fontFamily:"Sofia"}}>
                  An aspiring and driven computer science student at Lehman College in NYC.
                  Looking for opportunities that will let me utilize my education
                   and skills in the tech industry</p>
                 <div className="social-media">
-                    <a href="https://www.linkedin.com/in/ala-sobhan-892b9017a/" rel="noopener noreferrer" target="_blank">
+                    <a  href="https://www.linkedin.com/in/ala-sobhan-892b9017a/" rel="noopener noreferrer" target="_blank">
                         <i className="fa fa-linkedin-square" aria-hidden="true"/>
                     </a>
                     <a href="https://github.com/Ala123Sobhan" rel="noopener noreferrer" target="_blank">
