@@ -71,7 +71,7 @@ flex-wrap: wrap;*/
   left: 50%;
   top: 42%;
   /*transform: translate(-50%, -50%);*/
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 15px;
   font-weight: bold;
