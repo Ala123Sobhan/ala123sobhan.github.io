@@ -70,9 +70,10 @@ flex-wrap: wrap;*/
   position: absolute;
   left: 50%;
   top: 42%;
-  transform: translate(-50%, -50%);
+  transform: translate(-60%, -50%);
   color: white;
   font-size: 15px;
+  font-weight: bold;
 }
 .contact {
   position: absolute;
