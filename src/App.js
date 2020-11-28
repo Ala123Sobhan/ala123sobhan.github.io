@@ -13,10 +13,10 @@ function App() {
         <Header className="top-barColor" title={<Link style={{textDecoration:"none", fontFamily:"Sofia",color:"white"}} className="myportfolio-title" to ="/">My Portfolio</Link>} scroll>
 
         <Navigation>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold" }}className="link"  to="/">Home</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/about">About Me</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/projects">Projects</Link>
-                <Link style={{fontStyle:"italic", fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/contact">Contact</Link>
+                <Link style={{ fontStyle:"italic",fontFamily:"Sofia", fontWeight:"bold" }}className="link"  to="/">Home</Link>
+                <Link style={{ fontStyle:"italic",fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/about">About Me</Link>
+                <Link style={{ fontStyle:"italic",fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/projects">Projects</Link>
+                <Link style={{ fontStyle:"italic",fontFamily:"Sofia", fontWeight:"bold"}} className ="link" to="/contact">Contact</Link>
             </Navigation>
         </Header>
 

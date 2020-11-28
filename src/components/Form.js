@@ -76,6 +76,7 @@ import withReactContent from 'sweetalert2-react-content'
         })
           },
           error => {
+            console.log("error--"+error.message)
           //alert( 'An error occured, Plese try again',error.text)
           MySwal.fire({
             title: 'An error occured, Plese try again' ,
