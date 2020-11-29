@@ -95,9 +95,9 @@ function About() {
                <hr style={{borderTop:"2px solid #ffffff"}}/>
                <h3 className="chk-title" style={{ fontFamily:"Sofia"}}>Check out my resume-</h3>
 
-               <div class="tooltip">
-               <a style={{ fontFamily:"Sofia", textDecoration:"none",color:"white", fontSize:"18px"}} className="resume_link" download="Ala's resume" href={Resume}> Resume</a>
-               <span class="tooltiptext">click to download resume</span>
+               <div className="tooltip">
+               <a className="resume_link" download="Ala's resume" href={Resume}> Resume</a>
+               <span  className="tooltiptext">click to download resume</span>
                </div>
 
            </div>

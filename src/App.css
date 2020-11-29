@@ -72,7 +72,7 @@ flex-wrap: wrap;*/
   top: 42%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 .contact {
@@ -181,21 +181,36 @@ padding-left: 20px;
   font-size: 20px;
 }
 .resume_link {
-  font-size: 40px;
+  font-size: 18px;
+  padding-bottom: 40px;
+  font-family: Sofia;
+  color:white;
+  text-decoration: none;
+
+  /*fontFamily:"Sofia", color:"white",fontSize:"18px",*/
 }
 .resume_link:hover {
-  background-color:  rgb(230, 176, 255);
+  text-decoration: none;
   font-size: larger;
-  font-weight: bolder;
+  font-weight: bolder
+ /*  background-color:  rgb(230, 176, 255);*/
+ 
 }
+
 
 .tooltip {
+  text-decoration: none;
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted rgb(252, 252, 252);
+ 
+ 
 }
 
+
 .tooltip .tooltiptext {
+  
+  text-decoration: none;
+  display: inline-block;
   visibility: hidden;
   width: 160px;
   font-size: 12px;
@@ -211,6 +226,7 @@ padding-left: 20px;
 }
 
 .tooltip .tooltiptext::after {
+  text-decoration: none;
   content: "";
   position: absolute;
   top: 50%;
@@ -219,9 +235,12 @@ padding-left: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: transparent rgb(255, 250, 250) transparent transparent;
+ 
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  border-bottom: 1px dotted rgb(252, 252, 252);
+  
 }
 .page-clr {
   background-color: white;
