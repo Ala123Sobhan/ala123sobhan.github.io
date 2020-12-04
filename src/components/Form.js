@@ -60,7 +60,8 @@ import withReactContent from 'sweetalert2-react-content'
           .then(result => {
          // alert('Dear '+name+ ', message is sent, Ala Sobhan will get back to you shortly', result.text);
          MySwal.fire({
-          title: 'Dear '+name+ ', message is sent.\nI will get back to you shortly' ,
+          title: 'Message',
+          text: 'Dear '+name+ ', message is sent.\nI will get back to you shortly' ,
           icon: 'success',
           width: '480px',
           background:'#FFEFFF',
@@ -79,7 +80,8 @@ import withReactContent from 'sweetalert2-react-content'
            // console.log("error--"+error.message)
           //alert( 'An error occured, Plese try again',error.text)
           MySwal.fire({
-            title: 'An error occured, Plese try again' ,
+            title:'Message',
+            text: 'An error occured, Plese try again' ,
             icon: 'success',
             background:'#FFEFFF',
              showClass: {
