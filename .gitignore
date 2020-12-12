@@ -22,4 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
 src/apikeys.js
+=======
+>>>>>>> 79c97ae5f2106e39e7189f7a31144d725267af4f

@@ -17,7 +17,7 @@ class Projects extends Component {
             return (
             <div className="project1">
 
-              <div style={{marginLeft:"120px",marginRight:"110px", flexGrow:"1"}}>
+              <div style={{minWidth:"450", margin:"auto", height:"100%"}}>
                <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}} className="card1">
 
                    <CardTitle style={{color:"#ffff", height:"300px",fontWeight:"bolder", background:'url(https://vectorified.com/images/minesweeper-icon-24.jpg) center / cover'}}>
@@ -40,7 +40,7 @@ class Projects extends Component {
                </Card>
               </div>
                 
-                <div style={{marginLeft:"10px", marginRight:"120px", flexGrow:"1"}}>
+                <div style={{minWidth:"450", margin:"auto", height:"100%"}}>
                <Card shadow={5} style={{minWidth:"450", margin:"auto", height:"100%"}}>
                    <CardTitle style={{color: "#ffff", height:"300px", fontWeight:"bolder", background:'url(https://www.eparent.com/wp-content/uploads/2020/07/36425689-stock-vector-classical-school-building-isolated-on-white-background.jpg) center / cover'}}>
                    </CardTitle>
@@ -58,7 +58,7 @@ class Projects extends Component {
                </Card>
                </div>
 
-               <div style={{margingLeft:"60px",marginRight:"120px", flexGrow:"1"}}>
+               <div style={{minWidth:"450", margin:"auto", height:"100%"}}>
                <Card shadow={5} style={{minWidth:"450",margin:"auto", height:"100%"}}>
                    <CardTitle style={{color: "#ffff", height:"300px", fontWeight:"bolder", background:'url(https://www.flaticon.com/svg/static/icons/svg/3004/3004703.svg) center / cover'}}>
                    </CardTitle>
@@ -75,29 +75,7 @@ class Projects extends Component {
                  
                </Card>
                </div>
-               {/* <div style={{position:'fixed', top:"80%",left:"50%"}}>*/ }
-
-              <div style={{marginLeft:"-190px",marginRight:"720px",paddingTop:"70px", flexGrow:"1",paddingBottom:"40px"}}>
-              <Card shadow={5} style={{minWidth:"450",margin:"auto", height:"100%"}}>
-                   <CardTitle style={{color:"#ffff", height:"300px", background:'url(https://www.flaticon.com/svg/static/icons/svg/2721/2721271.svg) center / cover'}}>
-                   </CardTitle>
-                   <CardText style={{height:"150px",textAlign:"justify"}}>
-                   <h5  style={{color:"#2e3951"}}> Connect Four</h5>
-                   Used Java and Graphical User Interface to make a traditional Connect4 game where the user can select the dimensions of
-                   the grid. The objective of the game is that the player has to match four of his color components by connecting them row or column or diagonal wise.
-                   </CardText>
-                <CardActions>
-                    <Button colored><a style={{textDecoration:"none", color:"royalblue", padding:"20px"}} href="https://github.com/Ala123Sobhan/Connect4" rel="noopener noreferrer" target="_blank">Github</a></Button>
-                    
-                    
-                 </CardActions>
-                 
-               </Card>
-
-               </div>
               
-             
-            
                  
             </div>)
         }

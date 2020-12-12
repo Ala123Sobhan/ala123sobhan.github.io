@@ -83,7 +83,12 @@ function About() {
       />
               <img src={Ala} alt="Ala" className="myImg"/>
               <h6 style={{ fontFamily:"Sofia"}} className="quote">
+<<<<<<< HEAD
               “Never let the fear of striking out keep you from playing the game (Ruth)”
+=======
+              “Never let the fear of striking out keep you from playing the game”
+                -(Ruth)
+>>>>>>> 79c97ae5f2106e39e7189f7a31144d725267af4f
               </h6>
 
                <div className="resumeInfo">
@@ -94,9 +99,9 @@ function About() {
                <hr style={{borderTop:"2px solid #ffffff"}}/>
                <h3 className="chk-title" style={{ fontFamily:"Sofia"}}>Check out my resume-</h3>
 
-               <div class="tooltip">
-               <a style={{ fontFamily:"Sofia", textDecoration:"none",color:"white", fontSize:"18px"}} className="resume_link" download="Ala's resume" href={Resume}> Resume</a>
-               <span class="tooltiptext">click to download resume</span>
+               <div className="tooltip">
+               <a className="resume_link" download="Ala's resume" href={Resume}> Resume</a>
+               <span  className="tooltiptext">click to download resume</span>
                </div>
 
            </div>
