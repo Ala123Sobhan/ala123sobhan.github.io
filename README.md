@@ -3,7 +3,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-View the website [live!] (https://ala123sobhan.herokuapp.com/)
+View the website [live!](https://ala123sobhan.herokuapp.com/)
 
 ## Available Scripts
 
