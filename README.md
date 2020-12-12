@@ -1,5 +1,17 @@
-
+## Home Page
 <img src ="src/HomePage.png" alt="homepage">
+
+## About Page
+<img src="src/About.png" alt ="aboutme page">
+
+## Project Page
+<img src="src/Pro.png" alt ="project page">
+
+## Contact Page 
+<img src= "src/Contact.png" alt="contact page">
+
+## After Contacting Message Box
+<img src="src/Contact2.png" alt="msg box">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
