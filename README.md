@@ -1,3 +1,4 @@
+A portfolio site in React. This site is built with React Router, React-MDL, EmailJS. The site has the following pages: Home, About Me, Projects, and Contact Me. Users can view my information and contact me using the provided contact form.
 ## Home Page
 <img src ="src/HomePage.png" alt="homepage">
 
