@@ -1,71 +1,133 @@
-import React from 'react'
-import {List, ListItem, ListItemContent, Grid, Cell} from "react-mdl"
-import Form from "../components/Form"
+import React from "react";
+import { List, ListItem, ListItemContent, Grid, Cell } from "react-mdl";
+import Form from "../components/Form";
 function Contact() {
-    return (
-        <div>
-            <h1 className="contact"style={{fontFamily:"Sofia",color:"white", paddingBottom:"20px"}}>Contact Information</h1>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-             <div className="contact-body">
-                 <Grid className="contact-grid">
-                     <Cell col={6}>
-                     <h3  style={{fontFamily:"Sofia", color:"white"}}>Contact Form</h3>
-                     <hr style={{borderTop:"5px dotted white", width: "50%", margin:"auto"}}/>
-                     <div className="form">
-                      <Form/>
-                     </div>
-                     </Cell>
+  return (
+    <div>
+      <h1
+        className="contact"
+        style={{
+          fontFamily: "Sofia",
+          color: "white",
+          paddingBottom: "20px",
+        }}
+      >
+        Contact Information
+      </h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="contact-body">
+        <Grid className="contact-grid">
+          <Cell col={6}>
+            <h3 style={{ fontFamily: "Sofia", color: "white" }}>
+              Contact Form
+            </h3>
+            <hr
+              style={{
+                borderTop: "5px dotted white",
+                width: "50%",
+                margin: "auto",
+              }}
+            />
+            <div className="form">
+              <Form />
+            </div>
+          </Cell>
 
-                     <Cell col={6}>
-                         <h3 style={{fontFamily:"Sofia", color:"white"}}>My Contact Information</h3>
-                         <hr style={{borderTop:"5px dotted white", width: "50%", margin:"auto"}}/>
-                         <div className="contact-list">
-                         <List>
-                          <ListItem>
-                          <ListItemContent style={{fontSize:"20px", fontFamily:"Sofia",color:"white"}}>
-                               <i className="fa fa-phone-square" aria-hidden="true"/>
-                                 < span className ="linkedln">(718) 822-0314 </span>
-                              </ListItemContent>
-                          </ListItem>
+          <Cell col={6}>
+            <h3 style={{ fontFamily: "Sofia", color: "white" }}>
+              Contact Information
+            </h3>
+            <hr
+              style={{
+                borderTop: "5px dotted white",
+                width: "50%",
+                margin: "auto",
+              }}
+            />
+            <div className="contact-list">
+              <List>
+                <ListItem>
+                  <ListItemContent
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Sofia",
+                      color: "white",
+                    }}
+                  >
+                    <i className="fa fa-phone-square" aria-hidden="true" />
+                    <span className="linkedln">(718) 822-0314 </span>
+                  </ListItemContent>
+                </ListItem>
 
-                          <ListItem>
-                          <ListItemContent style={{fontSize:"20px", fontFamily:"Sofia",color:"white"}}>
-                          <a href="https://www.linkedin.com/in/ala-sobhan-892b9017a/" rel="noopener noreferrer" target="_blank">
-                           <i className="fa fa-linkedin-square" aria-hidden="true" style={{color:"white"}}/>
-                           </a>
-                               <a className ="linkedln" style={{textDecoration:"none",color:"white"}}href="https://www.linkedin.com/in/ala-sobhan-892b9017a/" rel="noopener noreferrer" target="_blank">
-                                LinkedIn
-                               </a>
-                              </ListItemContent>
-                          </ListItem>
-                          
-                          <ListItem>
-                          <ListItemContent style={{fontSize:"20px", fontFamily:"Sofia",color:"white"}}>
+                <ListItem>
+                  <ListItemContent
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Sofia",
+                      color: "white",
+                    }}
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/ala-sobhan-892b9017a/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="fa fa-linkedin-square"
+                        aria-hidden="true"
+                        style={{ color: "white" }}
+                      />
+                    </a>
+                    <a
+                      className="linkedln"
+                      style={{ textDecoration: "none", color: "white" }}
+                      href="https://www.linkedin.com/in/ala-sobhan-892b9017a/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </a>
+                  </ListItemContent>
+                </ListItem>
 
-                          <a style={{textDecoration:"none",color:"white"}} href="mailto:ala123sobhan@gmail.com" rel="noopener noreferrer" target="_blank">
-                             <i className="fa fa-envelope" aria-hidden="true"/>
-                               </a>
-                               <a className ="linkedln" style={{textDecoration:"none",color:"white"}} href="mailto:ala123sobhan@gmail.com" rel="noopener noreferrer" target="_blank">
-                                ala123sobhan@gmail.com
-                               </a>
-                              </ListItemContent>
-                          </ListItem>
-
-
-                        </List>
-                        </div>
-                     </Cell>
-
-                 </Grid>
-
-             </div>
-          
-        </div>
-    )
+                <ListItem>
+                  <ListItemContent
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Sofia",
+                      color: "white",
+                    }}
+                  >
+                    <a
+                      style={{ textDecoration: "none", color: "white" }}
+                      href="mailto:ala123sobhan@gmail.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i className="fa fa-envelope" aria-hidden="true" />
+                    </a>
+                    <a
+                      className="linkedln"
+                      style={{ textDecoration: "none", color: "white" }}
+                      href="mailto:ala123sobhan@gmail.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      ala123sobhan@gmail.com
+                    </a>
+                  </ListItemContent>
+                </ListItem>
+              </List>
+            </div>
+          </Cell>
+        </Grid>
+      </div>
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;

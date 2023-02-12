@@ -41,17 +41,17 @@ i:hover{
 }
 .project-grid {
   display: flex;
-  padding-top: 60px;
-  
+  flex-wrap: wrap;
+   /* padding-top: 60px;
+  align-items: flex-start; */
   
 }
 .project1{
 display: flex;
 align-items: flex-start;
 flex-wrap: wrap;
+/*padding-top: 30px;
 padding-top: 60px;
-
-/*padding-top: 60px;
 display: flex;
 flex-wrap: wrap;*/
 }
@@ -70,14 +70,18 @@ flex-wrap: wrap;*/
   padding-top: 5em;
 }
 .quote {
-  position: absolute;
+ /* 
   left: 50%;
-  top: 42%;
   /*transform: translate(-50%, -50%);*/
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%); */
+  position: absolute;
+  top: 42%;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
+  opacity: 1.0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .contact {
   position: absolute;
@@ -89,7 +93,7 @@ flex-wrap: wrap;*/
 }
 .contact-body {
   margin: auto;
-  position: fixed;
+ /* position: fixed;*/
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -124,7 +128,7 @@ flex-wrap: wrap;*/
 .input-design{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
-  width: 10%;
+  width: 30%;
   height: 3%;
   background-color:#fbe3fd;
   color: rgb(93, 3, 116);
@@ -145,20 +149,25 @@ padding-left: 20px;
  
 }
 .contact-list {
-  padding-left: 160px;
+  /*padding-left: 160px;*/
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
 }
 .contact-list i {
-  font-size: 50px;
-  padding-right: 40px;
+  font-size: 4em;
+  padding-right: 10px;
+  
 }
 
 .contact-list i:hover {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .contact-list .linkedln:hover {
   background-color: rgb(230, 176, 255);
-  font-size: larger;
+  /*font-size: larger;*/
   font-weight: bolder;
 }
 .form {
@@ -179,10 +188,11 @@ padding-left: 20px;
 .resumeInfo {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 70%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
+  max-width: 100%;
 }
 .resume_link {
   font-size: 18px;
@@ -201,51 +211,6 @@ padding-left: 20px;
  
 }
 
-
-.tooltip {
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
- 
- 
-}
-
-
-.tooltip .tooltiptext {
-  
-  text-decoration: none;
-  display: inline-block;
-  visibility: hidden;
-  width: 160px;
-  font-size: 12px;
-  background-color: rgb(255, 251, 251);
-  color: rgb(129, 78, 153);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  left: 110%;
-}
-
-.tooltip .tooltiptext::after {
-  text-decoration: none;
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent rgb(255, 250, 250) transparent transparent;
- 
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  border-bottom: 1px dotted rgb(252, 252, 252);
-  
-}
 .page-clr {
   background-color: white;
 }
@@ -323,14 +288,114 @@ h6 {
     background-position: 900%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .social-media{
+   justify-content: center;
+  }
+  .heading-text h1{
+    margin-top: 3rem;
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
+  .social-media i {
+    font-size: 4.5rem;
+    padding: 8px;
+    justify-content: space-evenly;
+  }
+  .resumeInfo {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .tabs{
+    margin-top: 30px;
+  }
+  .tab-design {
+    font-size: small;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+  }
+  .tab-design:hover {
+    font-weight: bolder;
+    font-size: larger;
+    background-color: #ffcada;
+  }
+  .contact{
+    margin-top: 2em;
+  }
+  .contact-body{
+    margin-top: 8em;
+  }
+  .input-design{
+    width: 80%;
+    
+  }
+  .form-btn {
+    width: 30%;
+    font-size: large;
+    
+  }
+  .form-btn:hover {
+    background-color: rgb(234, 190, 255);
+    font-size: large;
+    font-weight: bolder;
+    opacity: 1.0;
+  }
+  .contact-list {
+    justify-content: center;
+  
+  }
+  .contact-list i {
+    font-size: 3em;
+    margin: 0 auto; 
+    
+  }
+  .contact-list i:hover {
+    font-weight: bold;
+  }
+  .fa{
+    display: initial;
+  }
+  
+  .contact-list .linkedln:hover {
+    background-color: rgb(230, 176, 255);
+    font-weight: bolder;
+  }
 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 /* For mobile: */
-[class*="col-"] {
+/*[class*="col-"] {
   width: 100%;
-}
+}*/
 
-@media only screen and (min-width: 600px) {
-  /* For tablets:  from 600 px to up*/
+/*@media only screen and (min-width: 600px) {
+  // For tablets:  from 600 px to up
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -343,10 +408,10 @@ h6 {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-}
+}*/
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: from 768 px to up */
+/*@media only screen and (min-width: 768px) {
+  //For desktop: from 768 px to up
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -364,9 +429,5 @@ h6 {
 .fa-github-square{
    margin: 0px 8px;
 }
+*/
 
-@media only screen and (max-width: 600px) {
-  .social-media{
-   justify-content: center;
-  }
-}

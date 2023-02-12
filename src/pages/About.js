@@ -1,13 +1,14 @@
-import React from 'react'
-import Ala from "./images/AlaImg.png"
+import React from "react";
+import Ala from "./images/AlaImg.png";
 import Particles from "react-tsparticles";
-import Resume from "./Resume.pdf"
-import EducationInfo from "../components/EducationInfo"
-import Skills from "../components/Skills"
+import Resume from "./Resume.pdf";
+import EducationInfo from "../components/EducationInfo";
+import Skills from "../components/Skills";
+
 function About() {
-    return (
-        <div>
-               <Particles
+  return (
+    <div>
+      <Particles
         id="tsparticles"
         options={{
           background: {
@@ -80,29 +81,29 @@ function About() {
           },
           detectRetina: true,
         }}
-      />
-              <img src={Ala} alt="Ala" className="myImg"/>
-              <h6 style={{ fontFamily:"Sofia"}} className="quote">
-              “Never let the fear of striking out keep you from playing the game”
-                -(Ruth)
-              </h6>
+      />{" "}
+      <div class="container mt-5">
+        <img src={Ala} alt="Ala" className="myImg" />
+        <h6 style={{ fontFamily: "Sofia" }} className="quote">
+          “Never let the fear of striking out keep you from playing the game”
+          -(Ruth)
+        </h6>
+        <div className="resumeInfo">
+          <EducationInfo startYear={2019} endYear={2021} />
 
-               <div className="resumeInfo">
-               <EducationInfo startYear={2019} endYear={2021}/>
-
-               <hr style={{borderTop:"2px solid #ffffff"}}/>
-               <Skills/>
-               <hr style={{borderTop:"2px solid #ffffff"}}/>
-               <h3 className="chk-title" style={{ fontFamily:"Sofia"}}>Check out my resume-</h3>
-
-               <div className="tooltip">
-               <a className="resume_link" download="Ala's resume" href={Resume}> Resume</a>
-               <span  className="tooltiptext">click to download resume</span>
-               </div>
-
-           </div>
+          <hr style={{ borderTop: "2px solid #ffffff" }} />
+          <Skills />
+          <hr style={{ borderTop: "2px solid #ffffff" }} />
+          <h3 className="chk-title" style={{ fontFamily: "Sofia" }}>
+            Check out my resume-
+          </h3>
+          <a className="resume_link" download="Ala's resume" href={Resume}>
+            Resume
+          </a>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default About
+export default About;
