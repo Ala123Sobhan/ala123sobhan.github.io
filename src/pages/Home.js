@@ -82,7 +82,7 @@ function Home() {
         <div class="bg-info d-flex aligns-items-center justify-content-center">
           <div className="heading-text">
             <h1 style={{ fontFamily: "Sofia" }}>Ala Sobhan</h1>
-            <p style={{ fontFamily: "Sofia" }}>
+            <p style={{ fontFamily: "Sofia", fontSize: "22px" }}>
               An aspiring and driven computer science student at Lehman College
               in NYC. Looking for opportunities that will let me utilize my
               education and skills in the tech industry
