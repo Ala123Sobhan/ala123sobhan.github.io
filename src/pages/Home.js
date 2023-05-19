@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import Particles from "react-tsparticles";
 
 function Home() {
-    return (
+  return (
     <div>
-         <Particles
+      <Particles
         id="tsparticles"
         options={{
           background: {
@@ -78,35 +78,46 @@ function Home() {
           detectRetina: true,
         }}
       />
-      <div >
-             
-                <div className="heading-text">
-                <h1 style={{fontFamily:"Sofia"}}>Ala Sobhan</h1>
-                <p  style={{ fontFamily:"Sofia"}}>
-                 An aspiring and driven computer science student at Lehman College in NYC.
-                 Looking for opportunities that will let me utilize my education
-                  and skills in the tech industry</p>
-                <div className="social-media">
-                    <a  href="https://www.linkedin.com/in/ala-sobhan-892b9017a/" rel="noopener noreferrer" target="_blank">
-                        <i className="fa fa-linkedin-square" aria-hidden="true"/>
-                    </a>
-                    <a href="https://github.com/Ala123Sobhan" rel="noopener noreferrer" target="_blank">
-                        <i className="fa fa-github-square" aria-hidden="true"/>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCVsQpBto3TGHhwhKiDiB-bQ?view_as=subscriber" rel="noopener noreferrer" target="_blank">
-                        <i className="fa fa-youtube-square" aria-hidden="true"/>
-                    </a>
-                    
+      <div class="container">
+        <div class="bg-info d-flex aligns-items-center justify-content-center">
+          <div className="heading-text">
+            <h1 style={{ fontFamily: "Sofia" }}>Ala Sobhan</h1>
+            <p style={{ fontFamily: "Sofia", fontSize: "22px" }}>
+              An aspiring and driven computer science student at Lehman College
+              in NYC. Looking for opportunities that will let me utilize my
+              education and skills in the tech industry
+            </p>
 
-                </div>
-   
-                </div>
+            <div className="social-media">
+              <a
+                href="https://www.linkedin.com/in/ala-sobhan-892b9017a/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i className="fa fa-linkedin-square" aria-hidden="true" />
+              </a>
 
-           
-         
-      </div>
+              <a
+                href="https://github.com/Ala123Sobhan"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i className="fa fa-github-square" aria-hidden="true" />
+              </a>
+
+              <a
+                href="https://www.youtube.com/channel/UCVsQpBto3TGHhwhKiDiB-bQ?view_as=subscriber"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i className="fa fa-youtube-square" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
