@@ -82,6 +82,7 @@ flex-wrap: wrap;*/
   opacity: 1.0;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-bottom: 60px;
 }
 .contact {
   position: absolute;
